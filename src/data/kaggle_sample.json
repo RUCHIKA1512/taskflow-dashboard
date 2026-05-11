@@ -1,0 +1,7 @@
+[
+  {"Project": "ERP System", "Cost": 50000, "Duration": 120, "Status": "On Track", "Risk": "Low"},
+  {"Project": "Mobile App", "Cost": 25000, "Duration": 90, "Status": "Delayed", "Risk": "High"},
+  {"Project": "Data Warehouse", "Cost": 75000, "Duration": 180, "Status": "On Track", "Risk": "Medium"},
+  {"Project": "Cloud Migration", "Cost": 40000, "Duration": 60, "Status": "Completed", "Risk": "Low"},
+  {"Project": "AI Chatbot", "Cost": 35000, "Duration": 100, "Status": "On Track", "Risk": "Medium"}
+]

@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;300;400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #6366f1;
+  --primary-dark: #4f46e5;
+  --secondary: #8b5cf6;
+  --background: #09090b;
+  --surface: #111827;
+  --card: #18181b;
+}
+
+@layer base {
+  body {
+    @apply bg-background text-zinc-100 font-['Outfit'] antialiased selection:bg-primary/30;
+  }
+}
+
+@layer components {
+  .glass-card {
+    @apply bg-zinc-900/40 backdrop-blur-xl border border-zinc-800/50 hover:bg-zinc-800/60 transition-all duration-300;
+  }
+
+  .nav-blur {
+    @apply bg-[#09090b]/80 backdrop-blur-xl border-b border-zinc-800/50;
+  }
+
+  .btn-primary {
+    @apply bg-primary hover:bg-primary-dark text-white px-6 py-3 rounded-2xl font-bold transition-all shadow-lg shadow-primary/20 active:scale-[0.98] hover:scale-[1.02];
+  }
+
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Premium Sidebar Link */
+  .sidebar-link {
+    @apply flex items-center gap-3 px-4 py-2.5 rounded-xl transition-all text-zinc-400 hover:text-white hover:bg-zinc-800/50 font-medium;
+  }
+
+  .sidebar-link-active {
+    @apply bg-primary/10 text-primary hover:bg-primary/15 hover:text-primary;
+  }
+}
+
+.animate-in {
+  animation: animate-in 0.5s ease-out;
+}
+
+@keyframes animate-in {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
